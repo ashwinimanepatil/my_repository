@@ -79,22 +79,22 @@ public class ProductListController {
 
 
 
-	private static void buyProduct()
-	{
-	    final String uri = "http://localhost:8080/http://localhost:8080/Spring4Rest/products/buyProduct?id=";
-	     
-	    Map<String, String> params = new HashMap<String, String>();
-	    params.put("id", "1");
-	     
-	    RestTemplate restTemplate = new RestTemplate();
-	    String result = restTemplate.getForObject(uri, String.class, params);
-	    System.out.println(result);
-	}
-	
-//	@GetMapping("/products/buyProduct")
-//	public ResponseEntity buyProdct(@RequestParam int id) {
-//		return new ResponseEntity(id, HttpStatus.OK);
+//	private static void buyProduct()
+//	{
+//	    final String uri = "http://localhost:8080/http://localhost:8080/Spring4Rest/products/buyProduct?id=";
+//	     
+//	    Map<String, String> params = new HashMap<String, String>();
+//	    params.put("id", "1");
+//	     
+//	    RestTemplate restTemplate = new RestTemplate();
+//	    String result = restTemplate.getForObject(uri, String.class, params);
+//	    System.out.println(result);
 //	}
+	
+	@GetMapping("/products/buyProduct")
+	public ResponseEntity buyProdct(@RequestParam int id) {
+		return new ResponseEntity(id, HttpStatus.OK);
+	}
 	
 	
 	

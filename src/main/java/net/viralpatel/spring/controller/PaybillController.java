@@ -13,11 +13,11 @@ import net.viralpatel.spring.dao.ProductListDao;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 public class PaybillController {
-	@Autowired
-	private ProductListDao productListDAO;
-	
-	@GetMapping("/products/buyProdct")
-	public ResponseEntity buyProdct(@RequestParam int id) {
-		return new ResponseEntity(id, HttpStatus.OK);
-	}
+//	@Autowired
+//	private ProductListDao productListDAO;
+//	
+//	@GetMapping("/products/buyProdct")
+//	public ResponseEntity buyProdct(@RequestParam int id) {
+//		return new ResponseEntity(id, HttpStatus.OK);
+//	}
 }
